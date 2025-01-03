@@ -2,7 +2,7 @@ import { APP_NAME } from '@/lib/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './menu'
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { MenuIcon } from 'lucide-react'
 import data from '@/lib/data'
 import Search from './search'
@@ -15,7 +15,7 @@ export default function Header() {
                     <div className='flex items-center'>
                         <Link
                             href='/'
-                            className='bg-blue-400 flex items-center ring-4 rounded-3xl p-2 ring-amber-200 gap-2 header-button font-extrabold text-2xl m-1 cursor-pointer'
+                            className='bg-yellow-300 flex items-center ring-4 rounded-3xl p-2 ring-amber-200 gap-2 header-button font-extrabold text-2xl m-1 cursor-pointer'
                         >
                             <Image
                                 src='/logo-maker.svg'

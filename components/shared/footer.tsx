@@ -1,7 +1,7 @@
 'use client'
 
 import { ChevronUp } from 'lucide-react'
-import { Button } from '../ui/button'
+import { Button } from '../../components/ui/button'
 import Link from 'next/link'
 import { APP_NAME } from '@/lib/constants'
 
@@ -28,7 +28,7 @@ export default function Footer() {
                     <p> © 2000-2024, {APP_NAME}, Inc. or its affiliates</p>
                 </div>
                 <div className='mt-8 flex justify-center text-sm text-gray-400'>
-                    123, Main Street, Anytown, CA, Zip 12345 | +1 (123) 456-7890
+                    1237, May Street, Mytown, London, NW3 6TY | +44 (123) 456-7890
                 </div>
             </div>
         </footer>

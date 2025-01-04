@@ -3,7 +3,7 @@ import { ISettingInput } from '@/types'
 import data from '../data'
 import Setting from '../db/models/setting.model'
 import { connectToDatabase } from '../db'
-import { formatError } from '../utils'
+import { formatError } from '../utils2'
 import { cookies } from 'next/headers'
 
 const globalForSettings = global as unknown as {

@@ -22,7 +22,7 @@ export const getSetting = async (): Promise<ISettingInput> => {
         const setting = await Setting.findOne().lean()
         globalForSettings.cachedSettings = setting
             ? JSON.parse(JSON.stringify(setting))
-            : data.settings[0]
+            : data?.settings[0]
     }
     return globalForSettings.cachedSettings as ISettingInput
 }

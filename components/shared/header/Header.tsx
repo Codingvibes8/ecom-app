@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
-//import { getAllCategories } from '@/lib/actions/product.actions'
+import { getAllCategories } from '@/lib/actions/product.actions'
 import Menu from './menu'
 import Search from './search'
 import data from '@/lib/data'
 //import Sidebar from './sidebar'
-//import { getSetting } from '@/lib/actions/setting.actions'
-//import { getTranslations } from 'next-intl/server'
+import { getSetting } from '@/lib/actions/setting.actions'
+import { getTranslations } from 'next-intl/server'
 
 export default async function Header() {
-    //const categories = await getAllCategories()
-    //const { site } = await getSetting()
-    //const t = await getTranslations()
+   const categories = await getAllCategories()
+   const { site } = await getSetting()
+   const t = await getTranslations()
     return (
         <header className='bg-black  text-white'>
             <div className='px-2'>
@@ -25,9 +25,9 @@ export default async function Header() {
                                 src={site.logo}
                                 width={40}
                                 height={40}
-                                alt={`${app.name} logo`}
+                                alt={`${site.name} logo`}
                             />
-                            {app.name}
+                            {site.name}
                         </Link>
                     </div>
 
